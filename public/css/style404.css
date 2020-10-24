@@ -1,0 +1,73 @@
+html{
+  background-color: black;
+}
+body{
+    background-color: black;
+}
+svg {
+  margin: 0 auto;
+  display: block;
+  margin-top: 1%;
+  width: 100%;
+}
+polygon {
+  transform:rotateY(-180deg) scale(0);
+  transition: all 0.4s cubic-bezier(0.590, 0.720, 0.375, 1.650);
+  transform-origin:center;
+}
+polygon.processed {
+  transform:rotateY(0deg) scale(1);
+}
+.btn{
+  font-size: 2rem;
+    box-shadow: 4px 4px 1px 1px grey;
+  border: none;
+}
+.btn:hover{
+  border:none;
+    box-shadow: 2px 2px 1px 1px black;
+}
+.jumbotron{
+  margin: 5% auto;
+  background-color: black;
+}
+.container{
+  text-align: center;
+  margin-top: 8rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
+
+body {
+   display: block;
+   justify-content: center;
+   align-items: center;
+   background: black;
+}
+
+.neons {
+   margin-top: 2rem;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 3rem;
+  text-align: center;
+   font-weight: 100;
+   letter-spacing: 3px;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}

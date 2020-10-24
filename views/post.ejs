@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+<br>
+<div class="data">
+<% posts.forEach(function(post){ %>
+    <h1><%= post.title %></h1>
+   <p><%= post.content.substring(0, 100) + " ..." %><a href="/posts/<%= post.title %>">Read More</a></p> 
+   <br>
+<%})%>
+</div>
+<div class="container clear">
+<a href='/delete'><button class="btn btn-outline-dark">Clear All</button></a>
+</div>
+<%- include("partials/footer") -%>
